@@ -2,9 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
-Vue.config.productionTip = false
-
+import './styles/index.less' // 导入全局样式
+import '@/plugins' // 导入vant组件
+import 'amfe-flexible' // 动态设置 REM 基准值
 new Vue({
   router,
   store,
